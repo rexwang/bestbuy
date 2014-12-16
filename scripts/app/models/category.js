@@ -1,14 +1,9 @@
 define([
   'jquery',
-  'underscore',
   'app/helper/constants'
-], function($, _, Constants) {
+], function($, Constants) {
   
-  var categories = [];
-  $.support.cors = true;
-
   return {
-    categories: categories,
     getCategories: function() {
       var promise = $.ajax({
         type: 'GET',
