@@ -52,6 +52,8 @@ define([
             thumbnailImage: Constants.BestbuyCA + product.thumbnailImage
           }));
         });
+
+        $('body').trigger('products-listed');
       });
     },
 
